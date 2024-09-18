@@ -11,7 +11,7 @@ frontend:
     build:
       commands:
         - echo "ENV=$AWS_BRANCH" >> .env
-        - echo .env
+        - cat .env
         - npm run build
   artifacts:
     baseDirectory: dist
