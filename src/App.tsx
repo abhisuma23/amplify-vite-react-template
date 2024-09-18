@@ -6,7 +6,7 @@ const client = generateClient<Schema>();
 
 function App() {
   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
-  console.log("asd",process.env.REACT_APP_ENV);
+  console.log("asd",process.env.VITE_ENV);
   //console.log(env.AWS_BRANCH);
 
   useEffect(() => {
