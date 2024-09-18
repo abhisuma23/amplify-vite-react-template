@@ -10,7 +10,7 @@ frontend:
   phases:
     build:
       commands:
-        - echo "REACT_APP_ENV=$AWS_BRANCH" >> .env
+        - echo "VITE_ENV=$AWS_BRANCH" >> .env
         - cat .env
         - npm run build
   artifacts:
