@@ -6,7 +6,8 @@ const client = generateClient<Schema>();
 
 function App() {
   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
-  console.log(process.env);
+  console.log(process.env.AWS_BRANCH);
+  console.log(env.AWS_BRANCH);
 
   useEffect(() => {
     client.models.Todo.observeQuery().subscribe({
